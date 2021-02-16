@@ -1,26 +1,14 @@
-// $("#green").on("click", function(){
-//     $("#green").slideUp();
-// }),
+var buttonColours = ["red", "blue", "green", "yellow"];
 
-// $("#blue").on("click", function(){
-//     $("#blue").slideUp().animate("margin: 15");
-// }),
-
-// $("#red").on("click", function(){
-//     $("#red").slideUp().slideDown().animate("margin: 15");
-// }),
-
-// $("#yellow").on("click", function(){
-//     $("#yellow").slideUp().slideDown().animate("margin: 15");
-// });
+var gamePattern = [];
 
 function nextSequence() {
-    let randomNum = Math.floor(Math.random() * Math.floor());
-    return randomNum;
-}
 
-nextSequence();
-nextSequence();
-nextSequence();
-nextSequence();
-nextSequence();
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  var randomChosenColour = buttonColours[randomNumber];
+
+  gamePattern.push(randomChosenColour);
+
+};
+
